@@ -1,5 +1,10 @@
 # beeco-maptiles
 
+Create EC2:
+- t2.medium
+- default AMI: Amazon Linux 2023 AMI
+- check `Allow HTTP traffic from the internet`
+- 30GB SSD
 
 once you are in the EC2 instance, run:
 ``` sh
@@ -15,7 +20,6 @@ after this script is finished, I'm running:
 git clone https://github.com/openmaptiles/openmaptiles.git
 cd openmaptiles/
 sudo ./quickstart.sh hungary
-sudo make start-tileserver
 ```
 
 change zoom to 14
@@ -34,4 +38,6 @@ add custom style:
 1. add custom-style/beeco-style.json to ~/build/style/beeco-style.json
 2. add custom-style/config.json to ~/style/config.json
 
+run:
+`sudo make start-tileserver`
 
