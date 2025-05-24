@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to My Map!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Beeco Map!</h1>
+    <p>Explore the city with our custom OpenMapTiles setup.</p>
+  </header>
+
+  <iframe
+    src="http://ec2-18-197-104-165.eu-central-1.compute.amazonaws.com:8080/styles/beeco/#13.27/47.50347/19.05072"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+
+</body>
+</html>
