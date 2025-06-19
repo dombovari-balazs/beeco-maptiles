@@ -18,6 +18,12 @@
       "tilejson": {
         "type": "overlay"
       }
+    },
+        "beeco-v2": {
+      "style": "beeco-style-v2.json",
+      "tilejson": {
+        "type": "overlay"
+      }
     }
   },
   "data": {
